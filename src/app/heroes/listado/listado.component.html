@@ -1,0 +1,39 @@
+<p>Listado de Heroes</p>
+
+
+<div *ngIf="heroeB , else noBorrado">  <!--no se usa if , Ng ya es un if -->  <!-- this.heroeB !== ''  , es otra forma de hacerlo--> 
+    <h3>Heroe Borrado : <small> {{heroeB}}</small></h3>  <!-- //el else funciona: si no se cumple la condicion del if, muestra el template.-->
+</div>
+
+
+<ng-template #noBorrado> <!-- referencia local es del lado del template , dentro del html y se indica con # -->
+    <h3>No ha Borrado nada. </h3>   
+</ng-template>
+
+
+
+<button (click)=" borrarHeroe()">
+    Borrar heroe 
+</button>
+
+<ul>
+    <li *ngFor="let heroe of heroes ; let i = index ">  <!-- basicamente un for -->
+        {{ i + 1}} - {{ heroe }}
+    </li>
+</ul>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+                      

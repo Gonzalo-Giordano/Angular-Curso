@@ -1,0 +1,37 @@
+
+<h1> {{ nombre}}</h1>
+
+<dl>    
+
+    <td> Nombre: </td>
+    <dd> {{ nombre }}</dd>
+
+    <td> Edad: </td>
+    <dd> {{ edad }}</dd>
+
+    <td> Nombre y Edad: </td>
+    <dd> {{ obtenerNombre() }}</dd>
+
+    <td> Nombre en Mayuscula: </td>
+    <dd> {{ nombreMayuscula() }}</dd>
+
+    <!-- <td> Se cambio el nombre a : </td>
+    <dd> {{ cambiarNombre() }}</dd>
+
+    <td> Se cambio la Edad a : </td>
+    <dd> {{ cambiarEdad() }}</dd> -->
+
+    <!-- <td> Nombre Mayuscula con GET: </td>
+    <dd> {{ nombreMayuscula2}}</dd> -->
+
+</dl>
+
+
+
+<button (click) ="cambiarNombre()">
+    Cambiar Nombre de Heroe.
+</button>
+
+<button (click) ="cambiarEdad()">
+    Cambiar edad del Heroe.
+</button>
